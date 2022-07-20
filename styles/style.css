@@ -1,0 +1,225 @@
+body {
+    background-color: #fff;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+/* --------
+Part-1 banner
+-----------*/
+.part-1 {
+    background-image: linear-gradient(to right, #2b0848, #8740b1);
+    margin: 30px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+}
+
+.button {
+    width: fit-content;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    font-weight: 600px;
+    padding: 10px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.fifa {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Fjord One', serif;
+    color: white;
+}
+
+h3 {
+    font-family: 'Fjord One', serif;
+    color: white;
+
+}
+
+h4 {
+    color: black;
+    padding: 10px;
+}
+
+p {
+    font-family: 'Comfortaa', cursive;
+}
+
+
+
+/* --------
+Part-2 fixture & blog
+-----------*/
+.part-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px;
+
+}
+
+.upcoming {
+    height: 100%;
+    width: 30%;
+    background-color: #2b0848;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin-right: 20px;
+    padding-top: 20px;
+}
+
+.upbutton {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0 10px 0 10px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.upbutton:hover {
+    color: white;
+    background-color: red;
+}
+
+#upbutton {
+    color: white;
+    background-color: red;
+}
+
+#upbutton:hover {
+    color: black;
+    background-color: white;
+}
+
+
+.blogs {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 25px;
+    grid-column-gap: 25px;
+}
+
+.blog {
+    background-color: rgba(241, 227, 232, 0.85);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(206, 217, 226);
+    border-radius: 10px;
+}
+
+.news {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.comment {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Comfortaa', cursive;
+    padding: 10px;
+}
+
+.fa-clock {
+    color: #2b0848;
+}
+
+.fa-comment {
+    color: #2b0848;
+}
+
+/*----------
+Footer 
+-------------*/
+footer {
+    background-size: 100%;
+    background-color: #2b0848;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+hr {
+    width: 90%;
+    border: 1px solid grey;
+}
+
+.others {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: xx-large;
+
+}
+
+.fa-facebook {
+    padding-right: 10px;
+    color: white;
+}
+
+.fa-twitter {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+}
+
+.fa-instagram-square {
+    padding-left: 10px;
+    color: white;
+}
+
+/* ----------------------
+style for upcoming.html 
+------------------------*/
+.fixture {
+    background-color: rgba(241, 227, 232, 0.85);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(206, 217, 226);
+    border-radius: 10px;
+    padding-top: 5px;
+}
+
+
+.match {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px;
+    margin: 0px;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
