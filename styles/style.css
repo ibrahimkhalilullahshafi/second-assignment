@@ -193,6 +193,7 @@ Part-2 fixture & blog
 }
 
 button {
+    margin-top: 5px;
     border: .5px solid crimson;
     border-radius: 10px;
 }
