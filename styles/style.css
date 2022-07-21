@@ -389,4 +389,12 @@ style for upcoming.html
         grid-template-columns: repeat(2, 1fr);
         justify-content: space-evenly;
     }
+
+    #hidden {
+        visibility: hidden;
+    }
+
+    .goal {
+        text-align: center;
+    }
 }
