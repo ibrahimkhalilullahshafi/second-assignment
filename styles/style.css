@@ -20,7 +20,8 @@ Part-1 banner
 .heading {
     display: flex;
     flex-direction: column;
-    margin: 100px;
+    padding-left: 100px;
+    padding-bottom: 20px;
 }
 
 .button {
@@ -37,6 +38,7 @@ Part-1 banner
 .fifa {
     display: flex;
     justify-content: center;
+    padding-right: 100px;
 }
 
 h1 {
@@ -81,6 +83,7 @@ Part-2 fixture & blog
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
+    text-align: center;
     margin-right: 20px;
     padding-top: 20px;
 }
@@ -129,9 +132,23 @@ Part-2 fixture & blog
     border-radius: 10px;
 }
 
+#hidden {
+    visibility: hidden;
+}
+
 .news {
     width: 100%;
     border-radius: 10px;
+}
+
+button {
+    border: .5px solid crimson;
+    border-radius: 10px;
+}
+
+button:hover {
+    color: white;
+    background-color: red;
 }
 
 .comment {
@@ -222,4 +239,102 @@ style for upcoming.html
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/*-------------------------
+ RESPONSIVE FOR MOBILE
+ --------------------------*/
+@media screen and (max-width: 576px) {
+    .part-1 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .heading {
+        padding: 20px;
+    }
+
+    .fifa {
+        padding: 0;
+    }
+
+    .banner {
+        height: 420px;
+        width: 400px;
+    }
+
+    /*---------using ellipsis--------*/
+    h3 {
+        height: 75px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: justify;
+    }
+
+    .part-2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .upcoming {
+        background-color: #fff;
+    }
+
+    .blogs {
+        grid-template-columns: 1fr;
+    }
+
+    .others {
+        flex-direction: column;
+    }
+
+}
+
+/*-------------------------
+ RESPONSIVE FOR TABLET
+ --------------------------*/
+@media screen and (min-width:577px) and (max-width:768px) {
+    .heading {
+        padding: 0px 0px 20px 120px;
+    }
+
+    h1 {
+        text-align: justify;
+    }
+
+    /*---------using ellipsis--------*/
+    h3 {
+        height: 145px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: justify;
+    }
+
+    .fifa {
+        padding-left: 0px;
+        padding-right: 100px;
+    }
+
+    .banner {
+        height: 420px;
+        width: 400px;
+    }
+
+    .part-2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .upcoming {
+        background-color: #fff;
+        flex-direction: row;
+    }
+
+    .blogs {
+        margin-top: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-evenly;
+    }
 }
