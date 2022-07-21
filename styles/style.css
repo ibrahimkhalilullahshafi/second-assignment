@@ -183,10 +183,6 @@ Part-2 fixture & blog
     border-radius: 10px;
 }
 
-#hidden {
-    visibility: hidden;
-}
-
 .news {
     width: 100%;
     border-radius: 10px;
@@ -216,6 +212,10 @@ button:hover {
 
 .fa-comment {
     color: #2b0848;
+}
+
+.vmore {
+    visibility: hidden;
 }
 
 /*----------
@@ -391,10 +391,23 @@ style for upcoming.html
     }
 
     #hidden {
-        visibility: hidden;
+        display: none;
     }
 
     .goal {
         text-align: center;
+    }
+
+    .vmore {
+        visibility: visible;
+        width: fit-content;
+        text-decoration: none;
+        color: white;
+        background-color: red;
+        border-radius: 10px;
+        font-weight: 600px;
+        padding: 10px;
+        font-family: 'Comfortaa', cursive;
+
     }
 }
